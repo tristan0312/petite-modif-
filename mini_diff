@@ -89,8 +89,8 @@ def menu():
 
     pygame.quit()
 
-def get_police(size): 
-    return pygame.font.Font("retro.ttf", size)
+def police(taille): 
+    return pygame.font.Font("retro.ttf", taille)
 
 # Consignes et aides    
 def aide():
@@ -110,25 +110,25 @@ def aide():
                 if bouton_retour.collidepoint(evenement.pos):
                     menu()
                     
-        OPTIONS_TEXT = get_police(45).render("déplacements : ", True, "white")
-        OPTIONS_RECT = OPTIONS_TEXT.get_rect(center=(LARGEUR//2 - 100, 30))
-        fenetre.blit(OPTIONS_TEXT, OPTIONS_RECT)
+        OPTIONS_TEXTE = police(45).render("déplacements : ", True, "white")
+        OPTIONS_RECT = OPTIONS_TEXTE.get_rect(center=(LARGEUR//2 - 100, 30))
+        fenetre.blit(OPTIONS_TEXTE, OPTIONS_RECT)
         
-        OPTIONS_TEXT_1 = get_police(45).render("avancer : z", True, "white")
-        OPTIONS_RECT_1 = OPTIONS_TEXT_1.get_rect(center=(LARGEUR//2 - 100, 100))
-        fenetre.blit(OPTIONS_TEXT_1, OPTIONS_RECT_1)
+        OPTIONS_TEXTE_1 = police(45).render("avancer : z", True, "white")
+        OPTIONS_RECT_1 = OPTIONS_TEXTE_1.get_rect(center=(LARGEUR//2 - 100, 100))
+        fenetre.blit(OPTIONS_TEXTE_1, OPTIONS_RECT_1)
         
-        OPTIONS_TEXT_2 = get_police(45).render("reculer : s", True, "white")
-        OPTIONS_RECT_2 = OPTIONS_TEXT_2.get_rect(center=(LARGEUR//2 - 100, 170))
-        fenetre.blit(OPTIONS_TEXT_2, OPTIONS_RECT_2)
+        OPTIONS_TEXTE_2 = police(45).render("reculer : s", True, "white")
+        OPTIONS_RECT_2 = OPTIONS_TEXTE_2.get_rect(center=(LARGEUR//2 - 100, 170))
+        fenetre.blit(OPTIONS_TEXTE_2, OPTIONS_RECT_2)
         
-        OPTIONS_TEXT_3 = get_police(45).render("gauche : q", True, "white")
-        OPTIONS_RECT_3 = OPTIONS_TEXT_3.get_rect(center=(LARGEUR//2 - 110, 240))
-        fenetre.blit(OPTIONS_TEXT_3, OPTIONS_RECT_3)
+        OPTIONS_TEXTE_3 = police(45).render("gauche : q", True, "white")
+        OPTIONS_RECT_3 = OPTIONS_TEXTE_3.get_rect(center=(LARGEUR//2 - 110, 240))
+        fenetre.blit(OPTIONS_TEXTE_3, OPTIONS_RECT_3)
         
-        OPTIONS_TEXT_4 = get_police(45).render("tirer : clic gauche ", True, "white")
-        OPTIONS_RECT_4 = OPTIONS_TEXT_4.get_rect(center=(LARGEUR//2 +5 , 320))
-        fenetre.blit(OPTIONS_TEXT_4, OPTIONS_RECT_4)
+        OPTIONS_TEXTE_4 = police(45).render("tirer : clic gauche ", True, "white")
+        OPTIONS_RECT_4 = OPTIONS_TEXTE_4.get_rect(center=(LARGEUR//2 +5 , 320))
+        fenetre.blit(OPTIONS_TEXTE_4, OPTIONS_RECT_4)
                     
        
         
